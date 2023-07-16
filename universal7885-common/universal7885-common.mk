@@ -291,6 +291,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_PACKAGES += \
+    SamsungDAP
+
+# Samsung Ext Flash
+PRODUCT_PACKAGES += \
+     vendor.samsung_ext.hardware.camera.flashlight-service \
+     FlashControl
+
+# Samsung Ext SmartCharge
+PRODUCT_PACKAGES += \
+     vendor.samsung_ext.framework.battery-service \
+     SmartCharge
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.samsung \
