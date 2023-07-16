@@ -10,5 +10,6 @@
 # FMRadio
 /system/bin/vendor\.eureka\.hardware\.fmradio-service    		      u:object_r:hal_fmradio_default_exec:s0
 /system/bin/vendor\.eureka\.hardware\.audio_route-service                         u:object_r:hal_audio_route_default_exec:s0
+/system(/system_ext)?/bin/hw/vendor\.samsung_ext\.hardware\.camera\.flashlight-service\.eureka  u:object_r:hal_samsung_camera_flashlight_default_exec:s0
 
 /dev/radio0										u:object_r:fm_radio_device:s0

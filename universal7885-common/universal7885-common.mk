@@ -296,13 +296,18 @@ PRODUCT_PACKAGES += \
 
 # Samsung Ext Flash
 PRODUCT_PACKAGES += \
-     vendor.samsung_ext.hardware.camera.flashlight-service \
+     vendor.samsung_ext.hardware.camera.flashlight-service.eureka \
      FlashControl
 
 # Samsung Ext SmartCharge
 PRODUCT_PACKAGES += \
      vendor.samsung_ext.framework.battery-service \
      SmartCharge
+
+# Samsung Ext Tests
+PRODUCT_PACKAGES += \
+     test_flashlight \
+     test_smartcharge
 
 # Sensors
 PRODUCT_PACKAGES += \
