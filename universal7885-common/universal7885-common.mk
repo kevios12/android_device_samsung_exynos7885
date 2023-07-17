@@ -179,7 +179,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
+    vendor.samsung_ext.hardware.light-service
 
 # Media
 PRODUCT_COPY_FILES += \
