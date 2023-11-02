@@ -9,15 +9,6 @@ mv hardware/samsung/nfc .
 git clone https://github.com/eurekadevelopment/android_hardware_samsung hardware/samsung -b AOSP-13
 mv nfc hardware/samsung
 git clone --depth=1 https://github.com/eurekadevelopment/android_vendor_samsung_exynos7885.git -b android-13 vendor/samsung
-if test -f ${UNIVERSAL}/vendor_name; then
-	rm ${UNIVERSAL}/vendor_name
-fi
-python3 ${UNIVERSAL}/host-tools/makefile_generator.py
-for dev in a10dd a10 a20 a20e a30 a30s a40; do
-	echo "Generating ${dev} Makefiles..."
-	bash ${UNIVERSAL}/setup.sh "$dev"
-done
-
 # Remove multiple declared FMRadio path (we have our own FMRadio and this cause build error)
 if [ -d "$FM_PATH" ]; then
 	echo "Remove FMRadio from ROM Source"
